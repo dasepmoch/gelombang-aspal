@@ -1,0 +1,17 @@
+{
+  "duration": 60,
+  "fps": 24,
+  "voice": "id-ID-ArdiNeural",
+  "lines": [
+    { "file": "vo_01.mp3", "at": 0.6,  "text": "Aspal di depan lampu merah selalu bergelombang." },
+    { "file": "vo_02.mp3", "at": 6.0,  "text": "Bukan karena tukangnya salah." },
+    { "file": "vo_03.mp3", "at": 11.0, "text": "Tapi karena kendaraan berat berhenti di titik yang sama." },
+    { "file": "vo_04.mp3", "at": 17.0, "text": "Roda yang mengerem mendorong aspal ke depan." },
+    { "file": "vo_05.mp3", "at": 23.0, "text": "Ditambah panas siang, aspal jadi lebih lunak." },
+    { "file": "vo_06.mp3", "at": 29.0, "text": "Sedikit-sedikit, aspal itu mengalir." },
+    { "file": "vo_07.mp3", "at": 35.0, "text": "Seperti menginjak adonan hangat di satu titik terus." },
+    { "file": "vo_08.mp3", "at": 41.0, "text": "Itu sebabnya gelombangnya selalu di depan garis berhenti." },
+    { "file": "vo_09.mp3", "at": 47.0, "text": "Solusinya: campuran lebih kaku, atau pindahkan titik berhenti." },
+    { "file": "vo_10.mp3", "at": 53.0, "text": "Aspal tidak rusak karena dipakai. Tapi karena dipakai di titik yang sama." }
+  ]
+}

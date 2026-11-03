@@ -1,0 +1,16 @@
+{
+  "name": "gelombang-aspal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "60-second vertical explainer short rendered with three.js in headless Chrome, sharded across GitHub Actions runners. No AI video model.",
+  "scripts": {
+    "render": "node render/render.mjs",
+    "audio": "node audio/mix.mjs",
+    "encode": "ffmpeg -y -v error -framerate 24 -i out/frames/f_%05d.jpg -i audio.wav -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest -movflags +faststart out/video.mp4"
+  },
+  "dependencies": {
+    "puppeteer": "25.16.0",
+    "three": "0.187.0"
+  }
+}
