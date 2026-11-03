@@ -52,7 +52,7 @@ jobs:
           PER=$(( (TOTAL_FRAMES + SHARDS - 1) / SHARDS ))
           START=$(( matrix_shard * PER ))
           END=$(( START + PER - 1 ))
-          [ $END -ge $TOTAL_FRAMES ] && END=$(( TOTAL_FRAMES - 1 ))
+          if [ "$END" -ge "$TOTAL_FRAMES" ]; then END=$(( TOTAL_FRAMES - 1 )); fi
           echo "shard ${{ matrix.shard }}: frames $START..$END"
           node render/render.mjs --start $START --end $END --out out/frames
         env:
